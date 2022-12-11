@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "SF PRO";
+  src: url(../fonts/SFPRO.OTF), url("src/assets/fonts/SFPRO.OTF") format("otf");
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "SF PRO";
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: url(../img/light.png);
+  }
+  main {
+    background: #FFFFFF;
+    color: #030101;
+  }
+  main .top {
+    background-color: #F8F2F7;
+  }
+  main input {
+    background: #FFFFFF;
+    color: #030101;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: url(../img/dark.png);
+  }
+  main {
+    background: #2E3440;
+    color: #D3D9E4;
+  }
+  main .top {
+    background-color: #39383B;
+  }
+  main input {
+    background: #2E3440;
+    color: #D3D9E4;
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  width: clamp(575px, 60vw, 780px);
+  height: clamp(320px, 45vh, 450px);
+  border-radius: 8px;
+  font-size: 14px;
+}
+main .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+main .top .buttons {
+  margin-left: 4px;
+  width: 50px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+main .top .buttons .button1,
+main .top .buttons .button2,
+main .top .buttons .button3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+main .top .buttons .button1 {
+  background-color: #FE5F57;
+}
+main .top .buttons .button2 {
+  background-color: #FDBC2E;
+}
+main .top .buttons .button3 {
+  background-color: #27C940;
+}
+main .top .file {
+  margin-right: 8px;
+  color: #FFF;
+  font-size: 12px;
+}
+main input {
+  outline: none;
+}
+main .content {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+main .content input {
+  outline: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 8%;
+  margin: 4px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+}
+footer img {
+  height: 54%;
+}/*# sourceMappingURL=style.css.map */
