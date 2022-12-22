@@ -27,7 +27,7 @@ const alfa = [
   "Z",
 ];
 
-function cripto(enter) {
+export default function cripto(enter) {
   ent = enter.toUpperCase();
   const arrayAlfa = ent.split("");
   let sai = [];
@@ -79,18 +79,18 @@ function descripto(enter) {
   console.log("A palavra " + ent + " descriptografada é: " + wordCrip);
 }
 
-document.body.onkeyup = function (event) {
-  if (event.keyCode == 13) {
-    enter = document.getElementById("word").value;
-    cripto(enter)
+// document.body.onkeyup = function (event) {
+//   if (event.keyCode == 13) {
+//     enter = document.getElementById("word").value;
+//     cripto(enter)
     
 
-    // document.querySelector("#loop").innerHTML = "Deseja executar novamente?" + "<input type='text' name='resloop' id='word'>" + "</input>"
-    // let result = document.getElementById("resloop").value
-    // if (result == 1) {
-    //   enter = ""
-    //   document.querySelector("#loop").innerHTML = ""
-    //   document.querySelector("#result").innerHTML = ""
-    // }
-  }
-};
+//     // document.querySelector("#loop").innerHTML = "Deseja executar novamente?" + "<input type='text' name='resloop' id='word'>" + "</input>"
+//     // let result = document.getElementById("resloop").value
+//     // if (result == 1) {
+//     //   enter = ""
+//     //   document.querySelector("#loop").innerHTML = ""
+//     //   document.querySelector("#result").innerHTML = ""
+//     // }
+//   }
+// };

@@ -66,6 +66,7 @@ main {
     height: clamp(320px, 45vh, 450px);
     border-radius: 8px;
     font-size: 14px;
+    overflow-x: auto;
 
     .top {
         display: flex;
